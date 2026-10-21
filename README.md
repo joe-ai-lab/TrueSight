@@ -1,39 +1,81 @@
 # TrueSight
 
-Hi, this is a project I'm building to explore how to tell if an image is real or AI-generated. It's still in progress, and I'm figuring out most things as I go.
+Hi! This is a project I'm working on to learn more about
+AI-generated images and how to tell them apart from real photos.
 
-I started this out of curiosity — I saw some DeepFakes and AI artworks online that made me wonder: how do people detect fakes? I’m a freshman and still learning, but I thought doing a small real project might help me understand things better.
+I've always enjoyed drawing, so I've had mixed feelings about
+AI-generated artwork. Some of it looks impressive, but it also
+made me wonder what makes an AI-generated image different from
+something made by a person.
 
----
+That curiosity eventually led me to AI-image detection.
+At first, I just wanted to understand how detectors work.
+But the more I looked into it, the more I wondered what happens
+when those detectors get things wrong.
 
-## What I'm Trying to Do
+I'm still learning, and this project is my way of exploring
+these questions step by step.
 
-- Load an image
-- Run it through a model that says if it's fake or not
-- Try Grad-CAM or other methods to see what the model focuses on
-- Build a small demo in a notebook, maybe later on the web
+## What I'm Exploring
 
----
+Right now, I'm especially interested in how reliable
+AI-image detectors are when they encounter images from
+generators they haven't seen before.
 
-## What I Have So Far
+The question I'm trying to understand is:
 
-- The repo is set up 😅
-- A demo notebook that loads an image and gives a fake result (just a placeholder)
-- Haven’t trained a real model yet — that’s next!
+**Can a detector tell when its own prediction might be wrong?**
 
----
+I'm starting with existing methods such as CNNDetection and
+UniversalFakeDetect, rather than trying to build a new model
+from scratch.
 
-## Stuff I Don't Know Yet (But Hope to Learn)
+If I find something that doesn't work well, I'd like to
+understand why and see whether there's a way to improve it.
 
-- How to prepare and label datasets
-- How to train deep models like Xception
-- How to not crash my computer 😬
-- How to explain what the model “sees”
+## Where Things Stand
 
----
+So far, the project includes:
+
+- An early notebook for loading and displaying images.
+- Notes on existing AI-image detection research.
+- Plans for comparing detectors across different generators.
+- A small Python evaluation tool for studying prediction errors
+  and what happens when uncertain predictions are rejected.
+
+The evaluation tool has passed 15 software tests using simulated
+data. These tests only check the evaluation code.
+
+**I haven't run real AI-image detector experiments yet.**
+
+Some of the research organization, documentation, and code
+have been developed with AI assistance. I've kept notes about
+this in the research record.
+
+## What's Next
+
+The next step is to prepare a small dataset and test existing
+detectors on real and AI-generated images.
+
+I want to understand where they make mistakes, especially
+when they seem confident about an incorrect answer.
+
+If I can identify a consistent problem, I'll look into
+existing solutions and try to improve one of them.
 
 ## Why This Repo Exists
 
-Honestly, this is part of something bigger — I want to slowly build a few useful projects over time. If I can keep this going, maybe it'll help with future research ideas or study plans. But mostly, it’s for learning by doing.
+I started this project because I was curious about AI images,
+but I hope it also helps me learn how research actually works.
 
-If you're reading this and have any feedback, I'd love to hear it.
+I'm still figuring out what area of AI I want to study more
+seriously, and I think working through a real problem is
+a good way to find out.
+
+I'll try to keep track of what I learn, including experiments
+that don't work as expected.
+
+You can find the research notes and experiment plans in the
+[research record](research/README.md).
+
+Feedback and suggestions are always welcome!
