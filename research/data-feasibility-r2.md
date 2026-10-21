@@ -6,6 +6,8 @@ Reviewed: 2026-10-21. This is a source and metadata review, not an image-level a
 
 Use selected **AIGIBench test archives** for the first pilot, subject to the acquisition checks in the [draft protocol](protocol-r2.md). This provides one documented release covering the requested conditions without collecting new images. Prefer ProGAN as a seen-generator reference, StyleGAN3 as an unseen GAN candidate, GLIDE as an older diffusion candidate, and FLUX.1-dev as a relatively newer candidate. The last two are both diffusion-family conditions; “newer” is a relative date category, not a separate architecture or a claim to represent the latest generators in 2026.
 
+Revision 0.2: start with an 80-image technical trial (10 real and 10 generated per source), separate from the retained 600-image exploratory main experiment. No model execution or large dataset download is part of this revision. Seen/unseen designations must be supported independently for each detector and exact checkpoint, including an explicit unresolved state; the shared descriptions below are preliminary, not a completed overlap audit.
+
 ## Sources, access, and restrictions
 
 ### AIGIBench — preferred
@@ -51,6 +53,16 @@ Both detectors accept RGB images, but their native preprocessing differs. Preser
 
 ## Feasibility decision
 
-The four archives total about 19.46 GB compressed, although only 600 images are planned. Extraction and weights require additional storage; the previously observed 45.7 GiB free local space is not a guarantee of sufficient working space. Prefer remote storage or staged extraction after checking archive sizes. Do not download all training data. No HTTP metadata check guarantees future availability or quota-free transfer.
+The four archives total about 19.46 GB compressed. **Do not download that collection now.** Prioritize lawful, reproducible acquisition of the 80 trial images, followed later by a disjoint main sample. Full extraction is not justified merely by the small requested sample. No HTTP metadata check guarantees future availability or quota-free transfer.
 
-Proceed to data acquisition only after the researcher accepts the pilot's limited scope and storage plan. Freeze the protocol and final manifest after provenance and duplicate checks, before detector scores are inspected. If the selected archives cannot provide the intended independent controls, revise and date the allocation rather than silently reusing or replacing images.
+### Small-sample access investigation
+
+Preferred routes, in order:
+
+1. Use an official, versioned per-image endpoint or author-provided small subset if available. Require source-relative IDs, license notices, class and generator labels, and reproducible selection, rather than hand-picked examples. The inspected release tree exposes ZIP archives; an official per-image route for all four sources has not been established.
+2. Investigate selective ZIP access through HTTP byte ranges. A HEAD-only request to the pinned `ProGAN.zip` URL returned HTTP 200, `Accept-Ranges: bytes`, and length 834652672. No image or archive payload was fetched. This is only a feasibility signal: HTTP 206 behavior, ZIP/ZIP64 central-directory access, per-member compression, server redirects, stable bytes/ETags, and range-transfer cost remain untested, including the other three archives. Do not present selective extraction as implemented or validated. A later bounded range probe must stop if the server ignores Range, returns the full file, or exceeds a declared transfer limit.
+3. If selective access fails, seek an author-maintained small release or a clearly authorized mirror with verifiable correspondence to the original release. A mirror's own license label is insufficient. Contacting maintainers requires a separate user instruction; no message was sent in this task. Do not substitute untraceable previews, screenshots, or re-encoded viewer images.
+
+Before a later selective transfer, declare a byte budget and request-size limits, verify authorization under the dataset and upstream terms, and record the access procedure. A ZIP route should enumerate original members from its directory, apply the protocol's deterministic selection to available metadata, and retain member paths, CRC checks, SHA-256 values, archive revision and byte length. Content grouping and matching may require additional metadata or samples; disclose that limit rather than claiming a score-blind random sample from an unknown full population. Never use selected image offsets as a substitute for provenance.
+
+If none of these routes can supply traceable samples within the budget, stop acquisition and document a revised data choice. The full archives remain deferred. Freeze each stage's manifest after provenance, matching, and duplicate checks, before its scores are inspected. Match content categories, real-source composition, formats, resolutions, and processing histories as closely as available metadata permits, documenting unavoidable differences. No small-sample images have yet been obtained, and the two stages' acquired counts remain zero.

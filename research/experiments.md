@@ -2,7 +2,7 @@
 
 **No research experiments have been run.** The existing notebook is an image-display demonstration with a placeholder prediction message, not a detector experiment.
 
-R2 now has a [draft protocol](protocol-r2.md) and [data feasibility review](data-feasibility-r2.md) for [RQ1](questions.md). The protocol is awaiting researcher review and image-level provenance checks; it is not an executed or frozen experiment. Acquired images: 0. Planned evaluation sample: 600, conditional on the checks. No performance numbers or conclusions are available.
+R2 now has a [protocol draft, version 0.2](protocol-r2.md) and [data feasibility review](data-feasibility-r2.md) for [RQ1](questions.md). The research plan is approved in principle; small-sample access and image-level provenance checks remain pending. Stage A is an 80-image technical trial (four sources, each with 10 real and 10 generated images) for pipeline validation only. Stage B retains the 600-image exploratory main experiment, excluding trial images and related groups. Acquired images in both stages: 0. Neither stage has run; no performance numbers or conclusions are available. The 19.46 GB full archive collection is deferred.
 
 ## When experiments begin
 
