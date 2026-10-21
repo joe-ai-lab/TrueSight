@@ -13,6 +13,7 @@ The original [project README](../README.md) and [demo notebook](../notebook/True
 - [Experiment record](experiments.md): the status of experiments and the evidence required when runs begin.
 - [R2 data feasibility](data-feasibility-r2.md): public release channels, terms, training-overlap risks, and acquisition limits.
 - [R2 draft protocol](protocol-r2.md): the proposed 600-image pilot and fixed evaluation rules; no experiments have been run.
+- [Frontier Methods and Research Gaps](frontier-methods-and-research-gaps.md): publication/resource verification, algorithm analysis, and candidate research questions as of 2026-10-21; no final algorithm selected.
 
 ## Keeping the record accurate
 
