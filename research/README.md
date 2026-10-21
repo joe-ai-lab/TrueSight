@@ -2,7 +2,9 @@
 
 Research direction: **Generalization and Reliability of AI-Generated Image Detection**
 
-Current stage: project recovery and research planning. No detector evaluation has been run in this repository.
+Current focus, selected by the user and ChatGPT on 2026-10-21: **Improving the Reliability of AI-Generated Image Detection under Distribution Shift**. The earlier direction and records are retained. The active question is whether existing detectors can identify unreliable predictions on unseen generators; see the [reliability protocol](reliability-protocol.md).
+
+Current stage: reliability evaluation preparation with simulated software verification. No real detector evaluation has been run in this repository.
 
 The original [project README](../README.md) and [demo notebook](../notebook/TrueSight_Demo.ipynb) are preserved as historical artifacts. Their early plans are not the current research schedule. The notebook displays a local image and prints a placeholder message; it does not detect generated images.
 
@@ -14,6 +16,8 @@ The original [project README](../README.md) and [demo notebook](../notebook/True
 - [R2 data feasibility](data-feasibility-r2.md): public release channels, terms, training-overlap risks, and acquisition limits.
 - [R2 draft protocol](protocol-r2.md): the proposed 600-image pilot and fixed evaluation rules; no experiments have been run.
 - [Frontier Methods and Research Gaps](frontier-methods-and-research-gaps.md): publication/resource verification, algorithm analysis, and candidate research questions as of 2026-10-21; no final algorithm selected.
+- [Reliability evaluation preparation](reliability-protocol.md): current objective, R2 limitations, partition isolation, metrics, and the model-independent input/output contract.
+- [Simulated software verification](validation/reliability-validation.md): executed tests, source hashes, and explicitly simulated outputs; no image-detection findings.
 
 ## Keeping the record accurate
 

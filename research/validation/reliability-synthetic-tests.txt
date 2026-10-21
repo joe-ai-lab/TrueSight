@@ -1,0 +1,35 @@
+SYNTHETIC SOFTWARE VERIFICATION ONLY - NOT AN IMAGE DETECTION EXPERIMENT
+Timestamp: 2026-10-21T14:52:08.166767+08:00
+Python: 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]
+Command: python -m unittest discover -s tests -v
+Exit code: 0
+Source SHA-256:
+truesight/__init__.py: b0049585eb5f010d888b801f74012d204138f483bee0b787cd604db785342136
+truesight/reliability.py: 8cf11c7c180b742a5be8ecd50267c31ff007a43eb11c553692f52e4499732b5d
+truesight/evaluate.py: 9e43591f36aaf38f2709f043f6baafce1ad32feee5911310c9b22904c44ba0a4
+tests/test_reliability.py: 04809048f982e9aee6efa85b6bfdf4d6e385baad06003b5206fb1ea7df3c35c7
+tests/fixtures/simulated_predictions.csv: 8754deff1393b57128fb1bdeed5474796075e7e3b83713b27d7516680963bd14
+
+test_all_failed (test_reliability.CsvTests.test_all_failed) ... ok
+test_cli_and_overwrite_protection (test_reliability.CsvTests.test_cli_and_overwrite_protection) ... ok
+test_conditions_are_separate (test_reliability.CsvTests.test_conditions_are_separate) ... ok
+test_duplicate_mixed_split_and_simulation_markers (test_reliability.CsvTests.test_duplicate_mixed_split_and_simulation_markers) ... ok
+test_failures_are_accounted_for (test_reliability.CsvTests.test_failures_are_accounted_for) ... ok
+test_missing_scores_and_invalid_threshold_even_if_all_failed (test_reliability.CsvTests.test_missing_scores_and_invalid_threshold_even_if_all_failed) ... ok
+test_all_rejected_and_no_rejection (test_reliability.ReliabilityTests.test_all_rejected_and_no_rejection) ... ok
+test_auroc_against_pairwise_oracle (test_reliability.ReliabilityTests.test_auroc_against_pairwise_oracle) ... ok
+test_high_confidence_errors_worsen_selection (test_reliability.ReliabilityTests.test_high_confidence_errors_worsen_selection) ... ok
+test_imbalanced_counts_and_class_coverage (test_reliability.ReliabilityTests.test_imbalanced_counts_and_class_coverage) ... ok
+test_invalid_inputs (test_reliability.ReliabilityTests.test_invalid_inputs) ... ok
+test_perfect_predictions (test_reliability.ReliabilityTests.test_perfect_predictions) ... ok
+test_single_class_and_single_sample (test_reliability.ReliabilityTests.test_single_class_and_single_sample) ... ok
+test_threshold_boundaries_and_unbounded_scores (test_reliability.ReliabilityTests.test_threshold_boundaries_and_unbounded_scores) ... ok
+test_tie_aurc_against_exhaustive_permutations (test_reliability.ReliabilityTests.test_tie_aurc_against_exhaustive_permutations) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.475s
+
+OK
+
+CLI fixture command: python -m truesight.evaluate tests/fixtures/simulated_predictions.csv research/validation/simulated-reliability-results.json --decision-threshold 0.5 --acceptance-threshold 0.95
+CLI exit code: 0

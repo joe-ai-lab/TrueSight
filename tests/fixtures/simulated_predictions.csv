@@ -1,0 +1,13 @@
+sample_id,label,detection_score,confidence_score,status,data_kind,split,evaluation_condition,error_reason
+synthetic_normal_1,0,0.1,0.9,ok,simulated,synthetic_test,normal,
+synthetic_normal_2,1,0.9,0.8,ok,simulated,synthetic_test,normal,
+synthetic_error_1,0,0.99,0.99,ok,simulated,synthetic_test,confident_errors,
+synthetic_error_2,1,0.01,0.98,ok,simulated,synthetic_test,confident_errors,
+synthetic_error_3,0,0.2,0.6,ok,simulated,synthetic_test,confident_errors,
+synthetic_error_4,1,0.8,0.5,ok,simulated,synthetic_test,confident_errors,
+synthetic_imbalance_1,0,0.1,0.8,ok,simulated,synthetic_test,imbalanced,
+synthetic_imbalance_2,0,0.2,0.8,ok,simulated,synthetic_test,imbalanced,
+synthetic_imbalance_3,0,0.3,0.8,ok,simulated,synthetic_test,imbalanced,
+synthetic_imbalance_4,0,0.9,0.7,ok,simulated,synthetic_test,imbalanced,
+synthetic_imbalance_5,1,0.1,0.6,ok,simulated,synthetic_test,imbalanced,
+synthetic_failure,1,,,error,simulated,synthetic_test,pipeline_failure,Deliberately simulated decoding failure

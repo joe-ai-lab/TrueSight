@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "simulated",
+  "split": "synthetic_test",
+  "decision_threshold": 0.5,
+  "acceptance_threshold": 0.95,
+  "overall": {
+    "input_count": 12,
+    "scored_count": 11,
+    "failure_count": 1,
+    "scoring_coverage": 0.9166666666666666,
+    "end_to_end_acceptance_coverage": 0.16666666666666666,
+    "failed_real_count": 0,
+    "failed_generated_count": 1,
+    "metrics_on_scored_rows": {
+      "sample_count": 11,
+      "real_count": 7,
+      "generated_count": 4,
+      "auroc": 0.4107142857142857,
+      "decision_threshold": 0.5,
+      "acceptance_threshold": 0.95,
+      "full": {
+        "tp": 2,
+        "fp": 2,
+        "tn": 5,
+        "fn": 2,
+        "fpr": 0.2857142857142857,
+        "fnr": 0.5,
+        "risk": 0.36363636363636365
+      },
+      "selective": {
+        "tp": 0,
+        "fp": 1,
+        "tn": 0,
+        "fn": 1,
+        "fpr": 1.0,
+        "fnr": 1.0,
+        "risk": 1.0,
+        "accepted_count": 2,
+        "rejected_count": 9,
+        "coverage": 0.18181818181818182,
+        "real_coverage": 0.14285714285714285,
+        "generated_coverage": 0.25,
+        "rejected_risk": 0.2222222222222222
+      },
+      "aurc": 0.5193854125672308,
+      "aurc_convention": "mean_prefix_risk_expected_random_ties_v1",
+      "risk_coverage": [
+        {
+          "confidence_threshold": null,
+          "accepted_count": 0,
+          "coverage": 0.0,
+          "risk": null
+        },
+        {
+          "confidence_threshold": 0.99,
+          "accepted_count": 1,
+          "coverage": 0.09090909090909091,
+          "risk": 1.0
+        },
+        {
+          "confidence_threshold": 0.98,
+          "accepted_count": 2,
+          "coverage": 0.18181818181818182,
+          "risk": 1.0
+        },
+        {
+          "confidence_threshold": 0.9,
+          "accepted_count": 3,
+          "coverage": 0.2727272727272727,
+          "risk": 0.6666666666666666
+        },
+        {
+          "confidence_threshold": 0.8,
+          "accepted_count": 7,
+          "coverage": 0.6363636363636364,
+          "risk": 0.2857142857142857
+        },
+        {
+          "confidence_threshold": 0.7,
+          "accepted_count": 8,
+          "coverage": 0.7272727272727273,
+          "risk": 0.375
+        },
+        {
+          "confidence_threshold": 0.6,
+          "accepted_count": 10,
+          "coverage": 0.9090909090909091,
+          "risk": 0.4
+        },
+        {
+          "confidence_threshold": 0.5,
+          "accepted_count": 11,
+          "coverage": 1.0,
+          "risk": 0.36363636363636365
+        }
+      ]
+    }
+  },
+  "by_condition": {
+    "confident_errors": {
+      "input_count": 4,
+      "scored_count": 4,
+      "failure_count": 0,
+      "scoring_coverage": 1.0,
+      "end_to_end_acceptance_coverage": 0.5,
+      "failed_real_count": 0,
+      "failed_generated_count": 0,
+      "metrics_on_scored_rows": {
+        "sample_count": 4,
+        "real_count": 2,
+        "generated_count": 2,
+        "auroc": 0.25,
+        "decision_threshold": 0.5,
+        "acceptance_threshold": 0.95,
+        "full": {
+          "tp": 1,
+          "fp": 1,
+          "tn": 1,
+          "fn": 1,
+          "fpr": 0.5,
+          "fnr": 0.5,
+          "risk": 0.5
+        },
+        "selective": {
+          "tp": 0,
+          "fp": 1,
+          "tn": 0,
+          "fn": 1,
+          "fpr": 1.0,
+          "fnr": 1.0,
+          "risk": 1.0,
+          "accepted_count": 2,
+          "rejected_count": 2,
+          "coverage": 0.5,
+          "real_coverage": 0.5,
+          "generated_coverage": 0.5,
+          "rejected_risk": 0.0
+        },
+        "aurc": 0.7916666666666666,
+        "aurc_convention": "mean_prefix_risk_expected_random_ties_v1",
+        "risk_coverage": [
+          {
+            "confidence_threshold": null,
+            "accepted_count": 0,
+            "coverage": 0.0,
+            "risk": null
+          },
+          {
+            "confidence_threshold": 0.99,
+            "accepted_count": 1,
+            "coverage": 0.25,
+            "risk": 1.0
+          },
+          {
+            "confidence_threshold": 0.98,
+            "accepted_count": 2,
+            "coverage": 0.5,
+            "risk": 1.0
+          },
+          {
+            "confidence_threshold": 0.6,
+            "accepted_count": 3,
+            "coverage": 0.75,
+            "risk": 0.6666666666666666
+          },
+          {
+            "confidence_threshold": 0.5,
+            "accepted_count": 4,
+            "coverage": 1.0,
+            "risk": 0.5
+          }
+        ]
+      }
+    },
+    "imbalanced": {
+      "input_count": 5,
+      "scored_count": 5,
+      "failure_count": 0,
+      "scoring_coverage": 1.0,
+      "end_to_end_acceptance_coverage": 0.0,
+      "failed_real_count": 0,
+      "failed_generated_count": 0,
+      "metrics_on_scored_rows": {
+        "sample_count": 5,
+        "real_count": 4,
+        "generated_count": 1,
+        "auroc": 0.125,
+        "decision_threshold": 0.5,
+        "acceptance_threshold": 0.95,
+        "full": {
+          "tp": 0,
+          "fp": 1,
+          "tn": 3,
+          "fn": 1,
+          "fpr": 0.25,
+          "fnr": 1.0,
+          "risk": 0.4
+        },
+        "selective": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "fpr": null,
+          "fnr": null,
+          "risk": null,
+          "accepted_count": 0,
+          "rejected_count": 5,
+          "coverage": 0.0,
+          "real_coverage": 0.0,
+          "generated_coverage": 0.0,
+          "rejected_risk": 0.4
+        },
+        "aurc": 0.13,
+        "aurc_convention": "mean_prefix_risk_expected_random_ties_v1",
+        "risk_coverage": [
+          {
+            "confidence_threshold": null,
+            "accepted_count": 0,
+            "coverage": 0.0,
+            "risk": null
+          },
+          {
+            "confidence_threshold": 0.8,
+            "accepted_count": 3,
+            "coverage": 0.6,
+            "risk": 0.0
+          },
+          {
+            "confidence_threshold": 0.7,
+            "accepted_count": 4,
+            "coverage": 0.8,
+            "risk": 0.25
+          },
+          {
+            "confidence_threshold": 0.6,
+            "accepted_count": 5,
+            "coverage": 1.0,
+            "risk": 0.4
+          }
+        ]
+      }
+    },
+    "normal": {
+      "input_count": 2,
+      "scored_count": 2,
+      "failure_count": 0,
+      "scoring_coverage": 1.0,
+      "end_to_end_acceptance_coverage": 0.0,
+      "failed_real_count": 0,
+      "failed_generated_count": 0,
+      "metrics_on_scored_rows": {
+        "sample_count": 2,
+        "real_count": 1,
+        "generated_count": 1,
+        "auroc": 1.0,
+        "decision_threshold": 0.5,
+        "acceptance_threshold": 0.95,
+        "full": {
+          "tp": 1,
+          "fp": 0,
+          "tn": 1,
+          "fn": 0,
+          "fpr": 0.0,
+          "fnr": 0.0,
+          "risk": 0.0
+        },
+        "selective": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "fpr": null,
+          "fnr": null,
+          "risk": null,
+          "accepted_count": 0,
+          "rejected_count": 2,
+          "coverage": 0.0,
+          "real_coverage": 0.0,
+          "generated_coverage": 0.0,
+          "rejected_risk": 0.0
+        },
+        "aurc": 0.0,
+        "aurc_convention": "mean_prefix_risk_expected_random_ties_v1",
+        "risk_coverage": [
+          {
+            "confidence_threshold": null,
+            "accepted_count": 0,
+            "coverage": 0.0,
+            "risk": null
+          },
+          {
+            "confidence_threshold": 0.9,
+            "accepted_count": 1,
+            "coverage": 0.5,
+            "risk": 0.0
+          },
+          {
+            "confidence_threshold": 0.8,
+            "accepted_count": 2,
+            "coverage": 1.0,
+            "risk": 0.0
+          }
+        ]
+      }
+    },
+    "pipeline_failure": {
+      "input_count": 1,
+      "scored_count": 0,
+      "failure_count": 1,
+      "scoring_coverage": 0.0,
+      "end_to_end_acceptance_coverage": 0.0,
+      "failed_real_count": 0,
+      "failed_generated_count": 1,
+      "metrics_on_scored_rows": null
+    }
+  }
+}

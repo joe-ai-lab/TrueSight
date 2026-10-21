@@ -1,5 +1,13 @@
 # Research questions
 
+## RQ2: Reliability under distribution shift (current focus)
+
+Decision, 2026-10-21: the user and ChatGPT selected **Improving the Reliability of AI-Generated Image Detection under Distribution Shift**.
+
+**Can existing AI-image detectors identify unreliable predictions when encountering unseen generators?**
+
+Status: model-independent evaluation software and simulated software tests only; no real detector inference or research results. The [reliability protocol](reliability-protocol.md) defines scope, provisional hypotheses RH1-RH3, metrics and partition rules. RQ1 below is preserved as the earlier question and a supporting detection benchmark. No final confidence algorithm has been selected.
+
 ## RQ1: Generalization to unseen generators
 
 **How well do existing AI-generated image detectors generalize to unseen image generators?**
