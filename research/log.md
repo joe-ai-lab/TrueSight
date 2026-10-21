@@ -35,3 +35,17 @@ Next, investigate the official CNNDetection and UniversalFakeDetect baselines an
 This maintenance task establishes Markdown entry points for research questions, decisions, and future experiments. Codex prepared these records from the repository and the user's stated research decisions. No student implementation, analysis, or experimental contribution is asserted.
 
 No models were installed, no datasets were downloaded, and no detector inference, training, or evaluation was performed during this restart. There are no detector results to report. The original README, notebook, and prior Git history are preserved.
+
+## 2026-10-21 — Phase 1 / R2: Data feasibility and draft protocol
+
+The user selected CNNDetection and UniversalFakeDetect, public data with documented sources, an initial sample near 600 images, and AUROC, false-positive rate, and false-negative rate with per-generator reporting. This task investigated sources and wrote a protocol; it did not execute that protocol.
+
+Codex inspected official repository documentation, relevant preprocessing and threshold code, dataset cards, license files, and public metadata endpoints. The [feasibility note](data-feasibility-r2.md) recommends selected AIGIBench test archives and records Synthbuster/RAISE and GenImage as alternatives with different coverage and access limitations. AIGIBench's metadata and archive sizes were accessible; no full data transfer or image-level provenance verification was performed.
+
+The [protocol draft](protocol-r2.md) proposes 75 real and 75 generated images for each of ProGAN, StyleGAN3, GLIDE, and FLUX.1-dev. ProGAN is a seen-generator reference, not an unseen condition. The target is 600 distinct eligible samples; acquired and accepted counts remain zero. Actual counts and a manifest can only be established after later acquisition and duplicate/source checks.
+
+The recommended primary threshold is fixed at logit zero, with no test-based tuning. Source inspection found that UniversalFakeDetect's validation entry point also computes a best threshold from test labels; that path must not supply the pilot's operating threshold. The planned original checkpoints must not be confused with AIGIBench's retrained checkpoints.
+
+Open issues are real-source/content matching, independence of the ProGAN test samples, unverifiable backbone exposure, archive storage cost, and researcher acceptance of the exploratory sample size. These are explicit limits rather than resolved findings. Earlier hypotheses remain untested. The draft does not freeze a dataset manifest or claim results, complete reproducibility, or student experimental contributions.
+
+No packages, models, or datasets were installed or downloaded. No inference, training, or formal evaluation was run. Public changes are English Markdown only. Publication to GitHub requires user confirmation after review of the local commit.

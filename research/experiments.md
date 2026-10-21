@@ -1,8 +1,8 @@
 # Experiment record
 
-**No research experiments have been run or registered yet.** The existing notebook is an image-display demonstration with a placeholder prediction message, not a detector experiment.
+**No research experiments have been run.** The existing notebook is an image-display demonstration with a placeholder prediction message, not a detector experiment.
 
-The next step is to investigate baseline and dataset feasibility and then specify a protocol for [RQ1](questions.md). No performance numbers or conclusions are available.
+R2 now has a [draft protocol](protocol-r2.md) and [data feasibility review](data-feasibility-r2.md) for [RQ1](questions.md). The protocol is awaiting researcher review and image-level provenance checks; it is not an executed or frozen experiment. Acquired images: 0. Planned evaluation sample: 600, conditional on the checks. No performance numbers or conclusions are available.
 
 ## When experiments begin
 

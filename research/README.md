@@ -11,6 +11,8 @@ The original [project README](../README.md) and [demo notebook](../notebook/True
 - [Research questions](questions.md): the current question, provisional hypotheses, and methods to investigate.
 - [Research log](log.md): dated observations, decisions, and changes in direction.
 - [Experiment record](experiments.md): the status of experiments and the evidence required when runs begin.
+- [R2 data feasibility](data-feasibility-r2.md): public release channels, terms, training-overlap risks, and acquisition limits.
+- [R2 draft protocol](protocol-r2.md): the proposed 600-image pilot and fixed evaluation rules; no experiments have been run.
 
 ## Keeping the record accurate
 

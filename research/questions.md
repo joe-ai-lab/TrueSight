@@ -26,6 +26,8 @@ These are expectations to test, not observations from TrueSight.
 
 ### Methods to investigate next
 
+Update, 2026-10-21 (R2): the user selected CNNDetection and UniversalFakeDetect as the two baselines. A [public-data feasibility review](data-feasibility-r2.md) and [draft protocol](protocol-r2.md) now document the proposed sample and evaluation rules. The items below retain the initial investigation agenda; baseline source inspection has begun, but models and data have not been acquired and no experiment has run. Dataset selection remains conditional on provenance checks.
+
 1. Inspect the official CNNDetection and UniversalFakeDetect implementations, pretrained weights, training descriptions, preprocessing, and score conventions. Neither baseline has been installed or evaluated for TrueSight.
 2. Check available evaluation datasets for generator provenance, real-image sources, licenses, duplicates, and overlap with detector training data. No dataset has been selected or downloaded for this restart.
 3. Draft a protocol with a held-out reference condition, documented unseen-generator conditions, fixed data splits, and a reproducible sampling rule. Keep any threshold selection separate from test evaluation.
@@ -36,7 +38,7 @@ Candidate official repositories for investigation:
 - [CNNDetection](https://github.com/PeterWang512/CNNDetection)
 - [UniversalFakeDetect](https://github.com/WisconsinAIVision/UniversalFakeDetect)
 
-These links identify candidates, not a completed reproduction or an exhaustive literature review. Record any later source-based decision in the research log.
+These links identify the selected baselines, not a completed reproduction or an exhaustive literature review. Record any later source-based decision in the research log.
 
 ### Intended first deliverable
 
